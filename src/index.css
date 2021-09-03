@@ -1,0 +1,22 @@
+/* fix over 1300 pxls */
+.fit{
+    width: 100%;
+}
+.banner {
+    z-index: 0;
+}
+.absolute {
+    position: absolute;
+}
+.custom-card {
+    z-index: 1;
+    margin-top: 22%;
+    margin-left: 5%;
+}
+.height-200 {
+    height: 200px;
+}
+.original {
+    height:auto;
+    width: auto;
+}
