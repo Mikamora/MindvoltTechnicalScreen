@@ -20,3 +20,25 @@
     height:auto;
     width: auto;
 }
+.relative {
+    position: relative;
+}
+.in-front {
+    z-index: 100;
+}
+#header {
+    margin-top: 40px;
+    margin-left: 5%;
+    font-size: 45px;
+    font-weight: 100;
+    position: absolute;
+    z-index: 2;
+    color: #1a1f71;
+}
+#subtitle {
+    margin-top: 200px;
+    margin-left: 5%;
+    font-size: 25px;
+    font-weight: 100;
+    color: #1a1f71;
+}
