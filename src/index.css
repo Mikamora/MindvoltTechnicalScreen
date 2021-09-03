@@ -26,6 +26,56 @@
 .in-front {
     z-index: 100;
 }
+.body-title {
+    font-size: 30px;
+    color: #1a1f71;
+    font-weight: 100;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.body-subtitle {
+    font-size: 25px;
+    color: #1a1f71;
+    font-weight: 100;
+}
+.thin {
+    font-weight: lighter;
+}
+.body-p {
+    font-size: 15px;
+}
+.yellowboxbox {
+    height: 400px;
+    overflow: hidden;
+}
+@media screen and (min-width:748px) and (max-width:1306px) {
+    #picturebanner {
+        background-size: 45% 150% !important;
+    }
+}
+#same-size {
+    height: 131px;
+}
+#picturebanner {
+    background-image: url(../assets/midyellow.png);
+    background-size: 75% 150%;
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    border-bottom: blur(2px);
+    overflow: hidden;
+}
+#policy {
+    font-size: 10px;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#reminder {
+    font-size: 25px;
+    color: #1a1f71;
+}
 #header {
     margin-top: 40px;
     margin-left: 5%;
@@ -36,7 +86,7 @@
     color: #1a1f71;
 }
 #subtitle {
-    margin-top: 200px;
+    margin-top: 190px;
     margin-left: 5%;
     font-size: 25px;
     font-weight: 100;
