@@ -1,4 +1,5 @@
 /* fix over 1300 pxls */
+
 .fit{
     width: 100%;
 }
@@ -27,34 +28,239 @@
     z-index: 100;
 }
 .body-title {
-    font-size: 30px;
+    font-size: 39.5px;
     color: #1a1f71;
-    font-weight: 100;
-    margin-top: 50px;
+    font-weight: 300;
+    margin-top: 45px;
     margin-bottom: 20px;
 }
 .body-subtitle {
-    font-size: 25px;
+    font-size: 30px;
     color: #1a1f71;
     font-weight: 100;
+    margin-bottom: 8px;
 }
 .thin {
     font-weight: lighter;
 }
 .body-p {
-    font-size: 15px;
+    font-size: 23px;
+    margin-bottom: 50px;
+}
+.body-p2 {
+    font-size: 19px;
+    margin-bottom: 30px;
 }
 .yellowboxbox {
     height: 400px;
     overflow: hidden;
 }
-@media screen and (min-width:748px) and (max-width:1306px) {
+@media screen and (min-width: 400px) {
+    .firstbanklogo {
+        margin-top: 31px;
+        margin-left: 75px;
+        margin-bottom: 28px;
+    } 
+    .visalogo {
+        margin-top: 45px;
+        margin-right: 75px;
+        margin-bottom: 28px;
+    }
+}
+@media screen and (max-width: 401px) {
+    .firstbanklogo {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    } 
+    .visalogo {
+        margin-bottom: 30px;
+    }
+    .under-400-center {
+        flex: 0 0 auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.same-size {
+    height: 137px;
+}
+.under-1090 {
+    display: none;
+}
+.display-1090 {
+    display: inherit;
+}
+.white-block {
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    margin-top: -180px;
+}
+#headerPart1 {
+    display: none;
+}
+#headerPart2 {
+    display: none;
+}
+.under-767 {
+    display: none;
+}
+.custom-card-2 {
+    display: none;
+}
+.card-container {
+    display: none;
+}
+@media screen and (max-width: 1200px) {
+    .custom-card {
+        z-index: 1;
+        margin-top: 17%;
+        margin-left: 5%;
+        width: 33%;
+    }
+    #header {
+        display: none;
+    }
+    #subtitle {
+        display: none;
+    }
+    #headerPart1 {
+        display: inherit;
+        margin-top: 3%;
+        margin-left: 5%;
+        font-size: 3.7vw;
+        width: 57%;
+        font-weight: 100;
+        position: absolute;
+        z-index: 2;
+        color: #1a1f71;
+    }
+    #headerPart2 {
+        display: inherit;
+        margin-top: 8%;
+        margin-left: 5%;
+        font-size: 3.7vw;
+        font-weight: 100;
+        position: absolute;
+        z-index: 2;
+        color: #1a1f71;
+    }
+}
+@media screen and (max-width: 767px) {
+    .custom-card2 {
+        display: inherit;
+        width: 50vw;
+        margin-left: 25vw;
+        margin-top: 5vw;
+        filter: drop-shadow(0 3mm 4mm rgb(27, 27, 27));
+    }
+    .card-container {
+        display: flex;
+        width: 100%;
+    }
+    #headerPart1 {
+        display: inherit;
+        margin-top: 13.5%;
+        margin-left: 5%;
+        font-size: 5.5vw;
+        width: 57%;
+        font-weight: 100;
+        position: absolute;
+        z-index: 2;
+        color: #1a1f71;
+    }
+    .under-767 {
+        display: inherit;
+    }
+    #headerPart2 {
+        display: inherit;
+        margin-top: 30%;
+        margin-left: 5%;
+        font-size: 5.5vw;
+        font-weight: 400;
+        position: absolute;
+        z-index: 2;
+        color: #1a1f71;
+    }
+    .custom-card {
+        display: none;
+    }
+}
+@media screen and (max-width: 968px) {
+    .over-968 {
+        display: none;
+    }
+}
+@media screen and (max-width: 1090px) {
+    .under-1090 {
+        display: inherit;
+    }
+    .display-1090 {
+        display: none !important;
+    }
+    #picturebanner {
+        border-top: 10px solid #F9A102;
+        border-bottom: 10px solid #F9A102;
+        background-image: linear-gradient(to right, #F9A102, #F5C20F) !important;
+        height: 220px;
+        justify-content: center !important;
+        background-size: 100% 150% !important;
+    }
+    #policy {
+        font-size: 14.3px;
+        padding-left: 76px;
+        padding-right: 76px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: rgba(56, 56, 56, 0.74);
+    }
+}
+@media screen and (max-width: 742px) {
+    .size-742 {
+        width: 50%;
+    }
+    .white-block {
+        display: none !important;
+    }
+    #picturebanner2 {
+        background: white !important;
+        justify-content: center !important;
+        margin-bottom: 1px !important;
+    }
+    #picturebanner {
+        border-top: 0px solid #F9A102;
+        border-bottom: 0px solid #F9A102;
+        background-image: linear-gradient(to right, #F9A102, #F5C20F) !important;
+        height: 220px;
+        justify-content: center !important;
+        background-size: 100% 150% !important;
+    }
+}
+@media screen and (max-width: 600px) {
+    .body-p {
+        font-size: 20px;
+    }
+    .body-title {
+        font-size: 34px;
+    }
+}
+@media (min-width: 888px) {
+    .col-med-4 {
+        flex: 0 0 auto;
+        width: 33.33333333%;
+    }
+}
+@media screen and (min-width:1090px) and (max-width:1306px) {
     #picturebanner {
         background-size: 45% 150% !important;
     }
 }
-#same-size {
-    height: 131px;
+#picturebanner2 {
+    margin-bottom: 70px;
+    justify-content: space-around;
+    background-position-y: 100%;
 }
 #picturebanner {
     background-image: url(../assets/midyellow.png);
@@ -62,33 +268,45 @@
     background-position-x: center;
     background-position-y: center;
     background-repeat: no-repeat;
-    border-bottom: blur(2px);
     overflow: hidden;
 }
 #policy {
-    font-size: 10px;
-    padding-left: 75px;
-    padding-right: 75px;
+    font-size: 14.3px;
+    padding-left: 76px;
+    padding-right: 76px;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 #reminder {
-    font-size: 25px;
+    font-size: 29px;
     color: #1a1f71;
 }
 #header {
     margin-top: 40px;
     margin-left: 5%;
-    font-size: 45px;
+    font-size: 48px;
     font-weight: 100;
     position: absolute;
     z-index: 2;
     color: #1a1f71;
 }
 #subtitle {
-    margin-top: 190px;
+    margin-top: 196px;
     margin-left: 5%;
-    font-size: 25px;
+    font-size: 28px;
     font-weight: 100;
     color: #1a1f71;
+}
+@media screen and (max-width:370px) {
+    #reminder {
+        font-size: 7vw;
+    }
+}
+@media screen and (max-width: 276px) {
+    .body-p {
+        font-size: 7vw;
+    }
+    .body-title {
+        font-size: 12vw;
+    }
 }
