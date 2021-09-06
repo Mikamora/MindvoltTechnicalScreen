@@ -11,14 +11,14 @@ Thank you for your time, if you are interested in a surprise click ctrl+shift+L!
     let darkmode = () => {
         if(counter % 2 == 0) {
             let body = document.querySelector("body")
-            img1.src="../assets/phone2.png"
-            img2.src="../assets/water2.png"
+            img1.src="assets/phone2.png"
+            img2.src="assets/water2.png"
             body.className = "darkmode"
             counter++;
         } else {
             let body = document.querySelector("body")
-            img1.src="../assets/phone.png"
-            img2.src="../assets/water.png"
+            img1.src="assets/phone.png"
+            img2.src="assets/water.png"
             body.classList.remove("darkmode")
             counter++;
         }
