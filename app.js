@@ -8,6 +8,7 @@ Thank you for your time, if you are interested in a surprise click ctrl+shift+L!
     shift = false;
     let img1 = document.querySelector("#phone")
     let img2 = document.querySelector("#utilities")
+    // darkmode
     let darkmode = () => {
         if(counter % 2 == 0) {
             let body = document.querySelector("body")
