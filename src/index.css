@@ -1,5 +1,7 @@
-/* fix over 1300 pxls */
-
+.darkmode {
+    background: #121212;
+    color: white;
+}
 .fit{
     width: 100%;
 }
@@ -31,7 +33,7 @@
     font-size: 39.5px;
     color: #1a1f71;
     font-weight: 300;
-    margin-top: 45px;
+    margin-top: 35px;
     margin-bottom: 20px;
 }
 .body-subtitle {
@@ -45,7 +47,7 @@
 }
 .body-p {
     font-size: 23px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 .body-p2 {
     font-size: 19px;
@@ -55,34 +57,6 @@
     height: 400px;
     overflow: hidden;
 }
-@media screen and (min-width: 400px) {
-    .firstbanklogo {
-        margin-top: 31px;
-        margin-left: 75px;
-        margin-bottom: 28px;
-    } 
-    .visalogo {
-        margin-top: 45px;
-        margin-right: 75px;
-        margin-bottom: 28px;
-    }
-}
-@media screen and (max-width: 401px) {
-    .firstbanklogo {
-        margin-top: 40px;
-        margin-bottom: 40px;
-    } 
-    .visalogo {
-        margin-bottom: 30px;
-    }
-    .under-400-center {
-        flex: 0 0 auto;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-}
-
 .same-size {
     height: 137px;
 }
@@ -98,12 +72,6 @@
     background-color: white;
     margin-top: -180px;
 }
-#headerPart1 {
-    display: none;
-}
-#headerPart2 {
-    display: none;
-}
 .under-767 {
     display: none;
 }
@@ -112,6 +80,67 @@
 }
 .card-container {
     display: none;
+}
+
+#headerPart1 {
+    display: none;
+}
+#headerPart2 {
+    display: none;
+}
+#picturebanner2 {
+    margin-bottom: 70px;
+    justify-content: space-around;
+    background-position-y: 100%;
+    display: none;
+}
+#picturebanner {
+    background-image: url(../assets/midyellow.png);
+    background-size: 75% 150%;
+    margin-top: 19px;
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+#policy {
+    font-size: 14.3px;
+    padding-left: 76px;
+    padding-right: 76px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#reminder {
+    font-size: 29px;
+    color: #1a1f71;
+}
+#header {
+    margin-top: 40px;
+    margin-left: 5%;
+    font-size: 48px;
+    font-weight: 100;
+    position: absolute;
+    z-index: 2;
+    color: #1a1f71;
+}
+#subtitle {
+    margin-top: 196px;
+    margin-left: 5%;
+    font-size: 28px;
+    font-weight: 100;
+    color: #1a1f71;
+}
+@media screen and (min-width: 400px) {
+    .firstbanklogo {
+        margin-top: 31px;
+        margin-left: 75px;
+        margin-bottom: 28px;
+    } 
+    .visalogo {
+        margin-top: 45px;
+        margin-right: 75px;
+        margin-bottom: 28px;
+    }
 }
 @media screen and (max-width: 1200px) {
     .custom-card {
@@ -146,6 +175,50 @@
         position: absolute;
         z-index: 2;
         color: #1a1f71;
+    }
+}
+@media screen and (min-width: 1090px) and (max-width:1306px) {
+    #picturebanner {
+        background-size: 45% 150% !important;
+    }
+}
+@media screen and (max-width: 1090px) {
+    .under-1090 {
+        display: inherit;
+    }
+    .display-1090 {
+        display: none !important;
+    }
+    #picturebanner {
+        border-top: 10px solid #F9A102;
+        border-bottom: 10px solid #F9A102;
+        background-image: linear-gradient(to right, #F9A102, #F5C20F) !important;
+        height: 220px;
+        margin-top: 0px;
+        justify-content: center !important;
+        background-size: 100% 150% !important;
+    }
+    #picturebanner2 {
+        display: flex;
+    }
+    #policy {
+        font-size: 14.3px;
+        padding-left: 76px;
+        padding-right: 76px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: rgba(56, 56, 56, 0.74);
+    }
+}
+@media screen and (max-width: 968px) {
+    .over-968 {
+        display: none;
+    }
+}
+@media screen and (min-width: 888px) {
+    .col-med-4 {
+        flex: 0 0 auto;
+        width: 33.33333333%;
     }
 }
 @media screen and (max-width: 767px) {
@@ -188,35 +261,6 @@
         display: none;
     }
 }
-@media screen and (max-width: 968px) {
-    .over-968 {
-        display: none;
-    }
-}
-@media screen and (max-width: 1090px) {
-    .under-1090 {
-        display: inherit;
-    }
-    .display-1090 {
-        display: none !important;
-    }
-    #picturebanner {
-        border-top: 10px solid #F9A102;
-        border-bottom: 10px solid #F9A102;
-        background-image: linear-gradient(to right, #F9A102, #F5C20F) !important;
-        height: 220px;
-        justify-content: center !important;
-        background-size: 100% 150% !important;
-    }
-    #policy {
-        font-size: 14.3px;
-        padding-left: 76px;
-        padding-right: 76px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        color: rgba(56, 56, 56, 0.74);
-    }
-}
 @media screen and (max-width: 742px) {
     .size-742 {
         width: 50%;
@@ -246,58 +290,22 @@
         font-size: 34px;
     }
 }
-@media (min-width: 888px) {
-    .col-med-4 {
+@media screen and (max-width: 401px) {
+    .firstbanklogo {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    } 
+    .visalogo {
+        margin-bottom: 30px;
+    }
+    .under-400-center {
         flex: 0 0 auto;
-        width: 33.33333333%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
 }
-@media screen and (min-width:1090px) and (max-width:1306px) {
-    #picturebanner {
-        background-size: 45% 150% !important;
-    }
-}
-#picturebanner2 {
-    margin-bottom: 70px;
-    justify-content: space-around;
-    background-position-y: 100%;
-}
-#picturebanner {
-    background-image: url(../assets/midyellow.png);
-    background-size: 75% 150%;
-    background-position-x: center;
-    background-position-y: center;
-    background-repeat: no-repeat;
-    overflow: hidden;
-}
-#policy {
-    font-size: 14.3px;
-    padding-left: 76px;
-    padding-right: 76px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-#reminder {
-    font-size: 29px;
-    color: #1a1f71;
-}
-#header {
-    margin-top: 40px;
-    margin-left: 5%;
-    font-size: 48px;
-    font-weight: 100;
-    position: absolute;
-    z-index: 2;
-    color: #1a1f71;
-}
-#subtitle {
-    margin-top: 196px;
-    margin-left: 5%;
-    font-size: 28px;
-    font-weight: 100;
-    color: #1a1f71;
-}
-@media screen and (max-width:370px) {
+@media screen and (max-width: 370px) {
     #reminder {
         font-size: 7vw;
     }
