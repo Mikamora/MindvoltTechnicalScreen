@@ -1,3 +1,4 @@
+/* applies to body when darkmode is active */
 .darkmode {
     background: #121212;
     color: white;
@@ -20,7 +21,7 @@
     height: 200px;
 }
 .original {
-    height:auto;
+    height: auto;
     width: auto;
 }
 .relative {
@@ -29,6 +30,7 @@
 .in-front {
     z-index: 100;
 }
+/* big headers */
 .body-title {
     font-size: 39.5px;
     color: #1a1f71;
@@ -36,6 +38,7 @@
     margin-top: 35px;
     margin-bottom: 20px;
 }
+/* smaller headers */
 .body-subtitle {
     font-size: 30px;
     color: #1a1f71;
@@ -53,10 +56,6 @@
     font-size: 19px;
     margin-bottom: 30px;
 }
-.yellowboxbox {
-    height: 400px;
-    overflow: hidden;
-}
 .same-size {
     height: 137px;
 }
@@ -65,12 +64,6 @@
 }
 .display-1090 {
     display: inherit;
-}
-.white-block {
-    width: 100%;
-    height: 200px;
-    background-color: white;
-    margin-top: -180px;
 }
 .under-767 {
     display: none;
@@ -88,12 +81,14 @@
 #headerPart2 {
     display: none;
 }
+/* banner with stock photos at mobile level */
 #picturebanner2 {
     margin-bottom: 70px;
     justify-content: space-around;
     background-position-y: 100%;
     display: none;
 }
+/* banner with stock photos and yellow bg */
 #picturebanner {
     background-image: url(../assets/midyellow.png);
     background-size: 75% 150%;
@@ -130,6 +125,7 @@
     font-weight: 100;
     color: #1a1f71;
 }
+
 @media screen and (min-width: 400px) {
     .firstbanklogo {
         margin-top: 31px;
