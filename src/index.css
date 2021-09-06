@@ -305,6 +305,10 @@
     #reminder {
         font-size: 7vw;
     }
+    #policy {
+        font-size: 10px;
+        padding: 10px;
+    }
 }
 @media screen and (max-width: 276px) {
     .body-p {
